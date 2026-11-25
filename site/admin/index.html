@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Демо-панель менеджера — 1147 Detailing</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="preload" href="../assets/fonts/golos-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/oswald-600-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/oswald-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/golos-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <script type="module" src="../js/admin.js"></script>
+</head>
+<body class="admin">
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Перейти к заявкам</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="1147 Detailing, вернуться на сайт">
+        <img class="brand-logo" src="../assets/brand/logo-1147-96.webp" srcset="../assets/brand/logo-1147-96.webp 1x, ../assets/brand/logo-1147-192.webp 2x" width="48" height="48" alt="">
+        <span class="brand-name">1147 Detailing</span>
+      </a>
+      <span class="demo-badge">Демо</span>
+      <a class="btn btn-ghost btn-sm admin-back" href="../">На сайт</a>
+    </div>
+  </header>
+
+  <main id="main" class="container admin-main">
+    <div class="admin-head">
+      <h1 id="admin-title">Демо-панель менеджера</h1>
+      <p class="muted">Тестовые заявки с сайта и несколько демонстрационных. Данные хранятся только в этом браузере — без входа, без отправки и без личных данных.</p>
+    </div>
+    <noscript><p class="admin-alert">Для демо-панели нужен JavaScript. Публичный сайт работает и без него.</p></noscript>
+    <div id="admin-app" class="admin-app" aria-labelledby="admin-title"></div>
+  </main>
+
+  <dialog class="dialog dialog-sheet" id="reset-dialog" aria-labelledby="reset-title" aria-describedby="reset-desc"></dialog>
+  <div class="visually-hidden" id="live" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
